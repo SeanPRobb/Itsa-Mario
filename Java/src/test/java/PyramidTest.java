@@ -20,12 +20,21 @@ public class PyramidTest {
     }
 
     @Test
-    public void pyramidToString() throws Exception {
+    public void pyramidToStringHeightOfOne() throws Exception {
         Pyramid pyramid = new Pyramid(1);
 
         //This says that pyramid toString should return ##
         // if it does then this test passes.
-        assertEquals("##", pyramid.toString());
+        assertEquals("##\n", pyramid.toString());
+    }
+
+    @Test
+    public void pyramidToStringHeightOfTwo() throws Exception {
+        Pyramid pyramid = new Pyramid(2);
+
+        //This says that pyramid toString should return ##
+        // if it does then this test passes.
+        assertEquals(" ##\n###\n", pyramid.toString());
     }
 
 }
