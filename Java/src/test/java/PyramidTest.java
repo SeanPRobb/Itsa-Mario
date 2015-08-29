@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by sean on 8/29/15.
  */
@@ -15,6 +17,15 @@ public class PyramidTest {
     @Test(expected = Exception.class)
     public void numberLargerThanTwentyThree() throws Exception {
         Pyramid pyramid = new Pyramid(24);
+    }
+
+    @Test
+    public void pyramidToString() throws Exception {
+        Pyramid pyramid = new Pyramid(1);
+
+        //This says that pyramid toString should return ##
+        // if it does then this test passes.
+        assertEquals("##", pyramid.toString());
     }
 
 }
