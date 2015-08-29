@@ -17,7 +17,8 @@ public class Pyramid {
     //Since we do not want to use that method we tell our method to override the old method.
     @Override
     public String toString() {
-        return "";
+        String halfPyramidToPrint = "##";
+        return halfPyramidToPrint;
     }
 
 
