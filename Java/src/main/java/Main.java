@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //This prompts the user for the height of the half pyramid
         System.out.print("Height:");
         int height = 0;
         //This loop will continue asking for a height input until there is a valid answer.
